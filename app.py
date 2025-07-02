@@ -6,7 +6,13 @@ car_data = pd.read_csv(
     'vehicles.csv')
 # Leitura dos dados
 
-st.header('Dados de anúncio de carros')
+st.header('Car seeling advertisements in the US')
+st.write('This webpage shows two basic graphs of car selling ads in the US.\n \
+    In the first graph, you can see the distribution of the odometer indication of the cars,\n \
+    which means how much used the cars were during their lifetime. Secondly, there is a dispersion\n \
+    graph showing the relationship between car usage (referred as "Odometer") and the price, which\n \
+    clearly stablishes that less used cars have higher prices and vice-versa.')
+
 
 hist_button = st.button('Criar histograma')  # criar um botão
 if hist_button:  # se o botão for clicado
